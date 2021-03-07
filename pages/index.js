@@ -17,7 +17,6 @@ export default function Home(){
 
   function ProfilePic(){
     return (<Image
-        priority
         src="/../public/me.webp"
         layout='intrinsic'
         height={1179}
