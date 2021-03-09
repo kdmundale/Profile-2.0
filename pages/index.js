@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home(){
 
-  let blah="bringing a unique perspective"
+  let blah="bringing unique perspective to programming and development"
 
   let content = "I have spent the last two decades building relationships.\nCultivating positive spaces for discussions and elevating experiences is my passion.\nI know people.\nNow, I want to build things that make their lives better.\nI offer a unique perspective\n \n-I'm not your typical programmer-\n \nand that makes me an asset."
 

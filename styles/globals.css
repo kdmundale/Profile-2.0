@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
 html,
 body {
   background-color: rgba(0,0,0,1);
@@ -304,7 +305,7 @@ header h1 {
   text-shadow: rgb(25,25,25) 3px 0 10px;
   padding: .5rem 0;
   margin-left: 2vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-shadow: rgb(97,194,233) 0px 0px 20px;
   font-size: 10vw;
   color: rgb(125,240,251);
@@ -313,10 +314,9 @@ header h1 {
 
 header h2 {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   text-shadow: rgb(25 25 25) 3px 0 10px;
-  font-size: 7vw;
-  font-variant: small-caps;
+  font-size: 8vw;
   color: rgb(165, 156, 255);
   margin-left: 2vw;
   margin-right: 2vw;
@@ -351,9 +351,8 @@ header div a {
   border-bottom: 1px solid rgb(165, 156, 255);
   margin: 4px 0;
   text-align: right;
-  font-size: 4.5vw;
-  font-family: 'Roboto', sans-serif;
-  font-variant: small-caps;
+  font-size: 5vw;
+  font-family: 'Bebas Neue', sans-serif;
   text-decoration: none;
   color: rgb(165, 156, 255);
   padding: .5rem .5rem;
@@ -364,8 +363,8 @@ header div a {
 header div a:hover{
   color: rgb(125,240,251);
   text-shadow: rgb(25,25,25) 3px 0 10px;
-  border-top: 1px solid rgb(125,240,251);
-  border-bottom: 1px solid rgb(125,240,251);
+  border-top: 2px solid rgb(125,240,251);
+  border-bottom: 2px solid rgb(125,240,251);
   transform: scale(1.1);
 }
 
@@ -403,14 +402,15 @@ header nav {display: none;}
   }
 
   header nav a {
-    font-size: 1.5vw;
+    font-size: 2.25vw;
     color: rgb(165, 156, 255);
     border-top: 1px solid rgb(165, 156, 255);
     border-bottom: 1px solid rgb(165, 156, 255);
     text-align: center;
-    font-variant: small-caps;
-    width: 7vw;
-    padding: 1.5vw 1vw;;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder;
+    width: 9.5vw;
+    padding: 1.5vw 0;;
     margin: 0 .5vw;
     transition: all .2s ease-in-out;
   }
@@ -418,8 +418,8 @@ header nav {display: none;}
   header nav a:hover {
     color: rgb(125,240,251);
     transform: scale(1.1);
-    border-top: 1px solid  rgb(125,240,251);
-    border-bottom: 1px solid rgb(125,240,251);
+    border-top: 2px solid  rgb(125,240,251);
+    border-bottom: 2px solid rgb(125,240,251);
   }
 }
 
@@ -438,7 +438,7 @@ header nav {display: none;}
   }
 
   header nav a {
-    padding: 1rem;
+    padding: 1rem 0;
   }
 
 }

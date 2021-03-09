@@ -15,7 +15,8 @@ export default function Header({children}){
     <header>
       <h1>KD Mundale</h1>
       <h2>{children}</h2>
-      <button onClick={toggle} type="button" name="button"></button>
+      <button onClick={toggle}
+        type="button" name="button"></button>
       <div style={{
           display: showMe?"flex":"none",
           zindex:40
@@ -26,6 +27,13 @@ export default function Header({children}){
           <Link href="/contact"><a>contact</a></Link>
           <Link href="/"><a>main</a></Link>
         </div>
+        <nav>
+          <Link href="/strengths"><a>strengths</a></Link>
+          <Link href="/projects"><a>projects</a></Link>
+          <Link href="/resume"><a>resume</a></Link>
+          <Link href="/contact"><a>contact</a></Link>
+          <Link href="/"><a>main</a></Link>
+        </nav>
     </header>
   )
 }

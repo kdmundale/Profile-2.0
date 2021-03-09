@@ -1,0 +1,87 @@
+.main{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14rem;
+  justify-content: center;
+}
+
+.main p {
+  font-family: 'Lato', sans-serif;
+  font-size: 5vw;
+  font-weight: bolder;
+  color: rgb(125,240,251);
+}
+
+.main div {
+  margin: 3rem ;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5rem;
+}
+
+.main a {
+  background-color: rgb(194,194,194);
+  margin: 1rem;
+  height: 25vw; width: 25vw;
+  border-radius: 18%;
+  box-shadow: 0px 0px 7px 3px  rgb(165, 156, 255);
+}
+
+#fb_icon {
+  background-image: url('../public/social_images/facebook.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#ig_icon{
+  background-image: url('../public/social_images/insta.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#li_icon{
+  background-image: url('../public/social_images/linkedin.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#email_icon{
+  background-image: url('../public/social_images/email.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width:768px){
+  .main {
+    padding-top: 15rem;
+  }
+
+  .main p {
+    font-size: 4vw;
+  }
+
+  .main div{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main a{
+    height: 15vw; width: 15vw;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .main p {
+    font-size: 3vw;
+  }
+  .main a{
+    height: 10vw; width: 10vw;
+  }
+}
