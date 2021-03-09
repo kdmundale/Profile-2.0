@@ -1,31 +1,38 @@
 .resumeNav{
   background-color: rgba(0,0,0,.8);
   position: fixed;
-  top: 6rem; left:2vw;
+  top: 11rem; left:2vw;
   display: flex;
   flex-direction: column;
 }
 
-.resumeNav a,.resumeNav button {
+.resumeNav a{
   color: rgb(125,240,251);
-  font-size: 3.5vw;
-  font-variant: small-caps;
+  font-size: 5.5vw;
+  font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   transition: all .2s ease-in-out;
-  padding: .35rem 0;
+  padding: .5rem 0;
 }
+
 .resumeNav div{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.resumeNav button{
+#navButton{
+  color: rgb(125,240,251);
+  position: fixed;
+  top: 8rem; left:2vw;
+  font-family: 'Bebas Neue', sans-serif;
   border: none;
   text-align: left;
-  font-size: 4vw;
+  font-size: 6vw;
   border-bottom:1px solid rgb(125,240,251);
   background-color: rgba(0,0,0,.5);
+  transition: all .2s ease-in-out;
+  padding: .5rem 0;
 }
 
 .resumeNav a:hover, .resumeNav button:hover{
@@ -132,12 +139,13 @@
     font-size: 2.5vw;
   }
 
-  .resumeNav {
-    top: 10rem;
+  #navButton{
+    top:12rem;
+    font-size: 3vw;
   }
 
-  .resumeNav button {
-    font-size: 3vw;
+  .resumeNav {
+    top: 16rem;
   }
 
   .resumeNav a{
@@ -153,11 +161,13 @@
     width: 70%;
   }
 
-  .resumeNav{
-    top:13rem;
-  }
-  .resumeNav button {
+  #navButton{
+    top:15rem;
     font-size: 2.5vw;
+  }
+
+  .resumeNav {
+    top: 20rem;
   }
 
   .resumeNav a{
@@ -194,7 +204,13 @@
     width: 60%;
     padding-top: 5rem;
   }
-  .resumeNav{
-    top:17rem;
+
+  #navButton{
+    top:18rem;
+    font-size: 2.5vw;
+  }
+
+  .resumeNav {
+    top: 23rem;
   }
 }

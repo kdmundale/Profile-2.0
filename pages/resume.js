@@ -54,15 +54,14 @@ export default function ResumePage(){
       <Header>
       {blah}
       </Header>
+      <button id={styles.navButton} onClick={toggle}
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
+        type="button" name="button">
+        quick nav
+      </button>
+      {isShown && (
       <nav className={styles.resumeNav}>
-        <button onClick={toggle}
-          onMouseEnter={() => setIsShown(true)}
-          onMouseLeave={() => setIsShown(false)}
-          type="button" name="button">
-          quick nav
-        </button>
-
-        {isShown && (
 
         <div
           onMouseEnter={() => setIsShown(true)}
@@ -84,8 +83,9 @@ export default function ResumePage(){
             <a>education</a>
           </Link>
         </div>
-        )}
+
       </nav>
+      )}
       <article className={styles.main}>
         <div className={styles.anchor} id="skill_section"/>
         <h2 className={styles.resTitle}>skills</h2>
