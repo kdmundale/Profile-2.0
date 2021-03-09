@@ -56,7 +56,6 @@ export default function ResumePage(){
       </Header>
       <button id={styles.navButton} onClick={toggle}
         onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}
         type="button" name="button">
         quick nav
       </button>
@@ -64,7 +63,6 @@ export default function ResumePage(){
       <nav className={styles.resumeNav}>
 
         <div
-          onMouseEnter={() => setIsShown(true)}
           onMouseLeave={() => setIsShown(false)}
           style={{
             display: showMe?"flex":"none",
