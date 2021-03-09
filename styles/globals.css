@@ -291,16 +291,19 @@ a {
 }
 
 header {
+    box-shadow: 0px 0px 7px 3px  rgba(0,0,0,1);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 30;
     display: block;
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,.7);
 }
 
 header h1 {
+  box-shadow: 0px 0px 7px 3px  rgb(0,0,0);
+  background-color: rgba(0,0,0,.7);
   display: block;
   text-shadow: rgb(25,25,25) 3px 0 10px;
   padding: .5rem 0;
