@@ -94,8 +94,40 @@
 .resTitle {
   font-size: 8vw;
   font-variant: small-caps;
-  margin: 15rem;
   text-shadow: rgb(0,0,0) 0px 0px 10px;
   text-shadow: rgb(125,240,251) 0px 0px 15px;
   text-shadow: rgb(97,194,233) 0px 0px 20px;
+}
+
+@media screen and (min-width:768px){
+  .main {
+    width: 80%;
+    padding-top: 10rem;
+  }
+
+  .main h2 {
+    font-size: 3.5vw;
+    padding-top: 2rem;
+  }
+  .main h3 {
+    font-size: 3vw;
+  }
+  .main p {
+    font-size: 2vw;
+  }
+
+  .skillContainer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skillContainer div {
+    font-size: 3vw;
+  }
+
+  .resumeNav {
+    top: 15rem; left: 2rem;
+  }
+
+  .anchor{
+    padding-top: 30vh;
+  }
 }
