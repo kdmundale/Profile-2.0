@@ -86,18 +86,18 @@ export default function ResumePage(){
       )}
       <article className={styles.main}>
         <div className={styles.anchor} id="skill_section"/>
-        <h2 className={styles.resTitle}>skills</h2>
+        <h4>skills</h4>
         <section className={styles.skillContainer}>
         {skills}
         </section>
         <div className={styles.anchor} id="project_section"/>
-        <h2 className={styles.resTitle}>projects</h2>
+        <h4>projects</h4>
       {projects}
         <div className={styles.anchor} id="employment_section"/>
-        <h2 className={styles.resTitle}>employment</h2>
+        <h4>employment</h4>
       {jobItems}
       <div className={styles.anchor} id="education_section"/>
-      <h2 className={styles.resTitle}>education</h2>
+      <h4>education</h4>
       <div><h2>{eds.degree}</h2><h3>{eds.name}</h3><h3>{eds.grad}</h3><NewlineText text={eds.details}/></div>
       </article>
 
