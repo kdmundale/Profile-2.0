@@ -1,0 +1,50 @@
+.main {
+  margin: auto;
+  width:90%;
+  padding-top: 25vh;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main h2, .main h3{
+  margin: 3rem auto;
+  color:white;
+  font-size: 6vw;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(125,240,251);
+  text-shadow: rgb(0,0,0) 0px 0px 10px;
+  text-shadow: rgb(125,240,251) 0px 0px 15px;
+  text-shadow: rgb(97,194,233) 0px 0px 20px;
+  padding: 0;
+}
+
+.main h3 {
+  font-size: 4vw;
+}
+
+.main p {
+  background-color: rgba(0,0,0,.7);
+  margin: 2rem auto;
+  white-space: pre-wrap;
+  font-size: 4vw;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(165, 156, 255);
+}
+
+@media screen and (min-width: 768px){
+
+  .main{
+    padding-top: 35vh;
+  }
+  .main h2{
+    font-size: 5vw;
+  }
+
+  .main p {
+    font-size: 2vw;
+  }
+
+}

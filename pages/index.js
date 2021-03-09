@@ -8,7 +8,7 @@ export default function Home(){
 
   let blah="Bringing Unique Perspective to Web/App Design & Development"
 
-  let content = "I have spent the last two decades building relationships.\nCultivating positive spaces for discussions and elevating experiences is my passion.\nI know people.\nNow, I want to build things that make their lives better.\nI offer a unique perspective\n-I'm not your typical programmer-\nand that makes me an asset."
+  let content = "I have spent the last two decades building relationships.\nCultivating positive spaces for discussions and elevating experiences is my passion.\nI know people.\nNow, I want to build things that make their lives better.\nI offer a unique perspective\n \n-I'm not your typical programmer-\n \nand that makes me an asset."
 
   function NewlineText(props) {
   const text = props.text;
@@ -19,8 +19,8 @@ export default function Home(){
     return (<Image
         src="/../public/me.webp"
         layout='intrinsic'
-        height={1179}
-        width={861}
+        height={1679}
+        width={1261}
         alt="Photo of KDM posing next to bicycle on trail ride"
       />)
   }

@@ -17,7 +17,8 @@ export default function Header({children}){
       <h2>{children}</h2>
       <button onClick={toggle} type="button" name="button"></button>
       <div style={{
-          display: showMe?"flex":"none"
+          display: showMe?"flex":"none",
+          zindex:40
         }}>
           <Link href="/strengths"><a>strengths</a></Link>
           <Link href="/projects"><a>projects</a></Link>

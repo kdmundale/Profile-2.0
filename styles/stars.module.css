@@ -3,7 +3,7 @@
   left:0; right:0;
   top: 0;
   width: 100vw;
-  z-index: -1;
+  z-index: -10;
 }
 
 .star_1 {
@@ -13,6 +13,7 @@
   box-shadow: 0px 0px 7px 3px white;
   background-color: white;
   border-radius: 50% 50%;
+  z-index: -8;
 }
 
 .star_2 {
@@ -22,6 +23,7 @@
   background-color: white;
   box-shadow: 0px 0px 5px 2px white;
   border-radius: 50% 50%;
+  z-index: -8;
 }
 .star_3 {
   position: fixed;
@@ -30,6 +32,7 @@
   background-color: white;
   box-shadow: 0px 0px 5px 2px white;
   border-radius: 50% 50%;
+  z-index: -8;
 }
 .star_4 {
   position: fixed;
@@ -38,6 +41,7 @@
   background-color: white;
   box-shadow: 15px -15px 15px white;
   border-radius: 100% 20%;
+  z-index: -8;
 }
 
  #star_a{
