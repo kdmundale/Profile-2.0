@@ -16,7 +16,7 @@ export default function StrengthsPage(){
       <div key={c.title}><h2>{c.title}</h2><p>{c.section}</p></div>
   )
 
-  let blah = "Strengths"
+  let blah = "strengths"
   return (
     <StarField>
       <Header>

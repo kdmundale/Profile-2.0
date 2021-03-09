@@ -28,7 +28,7 @@ return (<p>{text}</p>)
 };
 
 export default function ResumePage(){
-  let blah= "Resume"
+  let blah= "resume"
 
   const skills = relSkills.map((s, index) =>
       <div key={index}>{s}</div>
@@ -47,30 +47,44 @@ export default function ResumePage(){
     console.log("flip");
   }
 
+  const [isShown, setIsShown] = useState(false);
+
   return (
     <StarField>
       <Header>
       {blah}
       </Header>
       <nav className={styles.resumeNav}>
-        <button onClick={toggle} type="button" name="button">quick nav</button>
-        <div style={{
+        <button onClick={toggle}
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}
+          type="button" name="button">
+          quick nav
+        </button>
+
+        {isShown && (
+
+        <div
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}
+          style={{
             display: showMe?"flex":"none",
             zindex:40
           }}>
-        <Link href="#skill_section">
-          <a>skills</a>
-        </Link>
-        <Link href="#project_section">
-          <a>projects</a>
-        </Link>
-        <Link href="#employment_section">
-          <a>jobs</a>
-        </Link>
-        <Link href="#education_section">
-          <a>education</a>
-        </Link>
+          <Link href="#skill_section">
+            <a>skills</a>
+          </Link>
+          <Link href="#project_section">
+            <a>projects</a>
+          </Link>
+          <Link href="#employment_section">
+            <a>jobs</a>
+          </Link>
+          <Link href="#education_section">
+            <a>education</a>
+          </Link>
         </div>
+        )}
       </nav>
       <article className={styles.main}>
         <div className={styles.anchor} id="skill_section"/>

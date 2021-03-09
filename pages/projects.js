@@ -3,7 +3,7 @@ import Header from '../componenets/header'
 import Head from 'next/head'
 
 export default function ProjectsPage(){
-  let blah = "Projects";
+  let blah = "projects";
 
   return (
     <StarField>

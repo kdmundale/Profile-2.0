@@ -1,7 +1,7 @@
 .main {
   margin: auto;
   width:90%;
-  padding-top: 25vh;
+  padding-top: 8rem;
   padding-bottom: 10vh;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,8 @@
 @media screen and (min-width: 768px){
 
   .main{
-    padding-top: 35vh;
+    width:80%;
+    padding-top: 12rem;
   }
   .main h2{
     font-size: 5vw;
@@ -47,4 +48,24 @@
     font-size: 2vw;
   }
 
+}
+
+@media screen and (min-width: 1200px){
+  .main {
+    padding-top: 15rem;
+    width: 70%;
+  }
+  .main h2{
+    font-size: 4vw;
+  }
+
+  .main p {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 1680px){
+  .main {
+    width: 60%;
+  }
 }

@@ -3,7 +3,7 @@ import Header from '../componenets/header'
 import Head from 'next/head'
 
 export default function StrengthsPsge(){
-  let blah="Contact"
+  let blah="contact"
   return (
     <StarField>
       <Header>
