@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.2",
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }
