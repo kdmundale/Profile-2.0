@@ -22,6 +22,7 @@ export default function Home(){
         height={1679}
         width={1261}
         alt="Photo of KDM posing next to bicycle on trail ride"
+        rel="preload"
       />)
   }
 
