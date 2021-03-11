@@ -34,7 +34,7 @@ export default function ProjectsPage(){
         <section key={x.key}>
               <h2>{x.title}</h2>
               <h3>{x.status}</h3>
-              <h3>Clink icon to view:</h3>
+              <h4>click icon to view:</h4>
                 <a target="blank" href={x.link} id={x.id} alt={x.alt}>
                 <div className={styles.road}>
                 <div id={styles.car}></div>
@@ -53,7 +53,7 @@ export default function ProjectsPage(){
         <section key={x.key}>
               <h2>{x.title}</h2>
               <h3>{x.status}</h3>
-              <h3>Clink icon to view:</h3>
+              <h4>click icon to view:</h4>
                 <a target="blank" href={x.link} className={s_id} alt={x.alt}></a>
               <p>{x.descript}</p><p>{x.langs}</p>
         </section>
