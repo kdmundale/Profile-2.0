@@ -121,8 +121,8 @@
        -moz-animation: move_lines .8s infinite;
          -o-animation: move_lines .8s infinite;
             animation: move_lines .8s infinite;
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: .37s;
+          animation-delay: .37s;
 }
 
 @keyframes move_lines {
@@ -141,6 +141,7 @@
 }
 
 .main section p {
+  text-align: center;
   width: 80%;
   margin: .5rem auto;
   font-family: 'Lato', sans-serif;
