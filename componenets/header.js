@@ -16,7 +16,7 @@ export default function Header({children}){
       <h1>KD Mundale</h1>
       <h2>{children}</h2>
       <button onClick={toggle}
-        type="button" name="button"></button>
+        type="button" name="button" alt="Site Links"></button>
       <div style={{
           display: showMe?"flex":"none",
           zindex:40

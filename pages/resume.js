@@ -18,7 +18,10 @@ const relProjects=[{name:'CLT- The CSET Supplemental Learning Tool React/Next.js
 const resumeJobs =[{name:'Lancaster City Alliance & Block by Block', title:'City Ambassador', local:'Lancaster, PA', from:'Aug 2020 - Present',
 duties:'Deliver customer service/hospitality, community relations for City of Lancaster. Represent city in everyday interactions with the community, provide assistance to citizens and visitors\n \nIdentify issues within city zones regarding maintenance and public safety according to city guidelines, assess situations involving businesses and citizens to execute best course of action\n \nInitiate contact with appropriate authorities when warranted, gather information draft detailed incident reports, and complete city maintenance requests\n \nMeet or exceed daily goals for zone map coverage, reporting, business checks, resident contacts'},
 {name:"Molly's Pub &Carryout", title:'Shift Manager/Bartender', local:'Lancaster, PA', from:'Feb 2017 - Jul 2020',
-duties:'Lead front of house staff of 3-4 people, delegate assignments, enforce business policies with co-workers/customers, write SOP guidelines for all front-of-house tasks. Take charge in high-stress/high-demand situations, implement well thought out solutions to resolve conflicts, direct and organize staff to enact best course of action\n \nCreate content for and manage social media accounts, photograph products, edit photos, post for marketing, escalate Facebook & Instagram following by 500%\n \nRebuild customer base, eliminate issues with neighboring residents/law enforcement, foster safe environment for employees/patrons within the first month and develop strategies in rebranding business, including marketing campaigns and events, increase patronage and bar revenue'}]
+duties:'Lead front of house staff of 3-4 people, delegate assignments, enforce business policies with co-workers/customers, write SOP guidelines for all front-of-house tasks. Take charge in high-stress/high-demand situations, implement well thought out solutions to resolve conflicts, direct and organize staff to enact best course of action\n \nCreate content for and manage social media accounts, photograph products, edit photos, post for marketing, escalate Facebook & Instagram following by 500%\n \nRebuild customer base, eliminate issues with neighboring residents/law enforcement, foster safe environment for employees/patrons within the first month and develop strategies in rebranding business, including marketing campaigns and events, increase patronage and bar revenue'},
+{name:"Chancey's Pub",title:'Bartender/Server',local:'East Petersburg, PA',from:'Oct 2007 - Sept 2011',duties:''},
+{name:'Cafe Chuckles',title:'Server/Bartender',local:'Lancaster,PA',from:'Feb 2005 - Oct 2007', duties:''},
+{name:'Sterling Custom Cabinetry', title:'Manager, Rough Lumber Department', local:'Lancaster, PA', from:'Sept 2003 - Sept 2006', duties:'Analyze and interpret conceptual drawings and blueprints to create custom moldings, define needs for material selection by understanding build requirements and paint/stain finishes\n \nSolve problems by troubleshooting machinery and equipment, adjust calibration and replacing/repairing parts as needed\n \nConsistently deliver weekly product goals by supplying needed material to cabinetmakers, ensuring production continues on schedule'}]
 
 const eds = {name:'Thaddeus Stevens College of Technology, Lancaster PA', degree:'Associate of Applied Science in Software Engineering', grad:'May 2021', details:['GPA: 3.8\n \nLeadership Workshop Nomination\n \nACM ICPC Programming Competition']}
 
@@ -47,43 +50,37 @@ export default function ResumePage(){
     console.log("flip");
   }
 
-  const [isShown, setIsShown] = useState(false);
-
   return (
     <StarField>
       <Header>
       {blah}
       </Header>
-      <button id={styles.navButton} onClick={toggle}
-        onMouseEnter={() => setIsShown(true)}
+      <button id={styles.navButton}
+        onClick={toggle}
         type="button" name="button">
         quick nav
       </button>
-      {isShown && (
-      <nav className={styles.resumeNav}>
-
-        <div
-          onMouseLeave={() => setIsShown(false)}
+      <nav className={styles.resumeNav}
           style={{
             display: showMe?"flex":"none",
             zindex:40
           }}>
-          <Link href="#skill_section">
+          <ul>
+          <li><Link href="#skill_section">
             <a>skills</a>
-          </Link>
-          <Link href="#project_section">
+          </Link></li>
+          <li><Link href="#project_section">
             <a>projects</a>
-          </Link>
-          <Link href="#employment_section">
+          </Link></li>
+          <li><Link href="#employment_section">
             <a>jobs</a>
-          </Link>
-          <Link href="#education_section">
+          </Link></li>
+          <li><Link href="#education_section">
             <a>education</a>
-          </Link>
-        </div>
-
+          </Link></li>
+          </ul>
       </nav>
-      )}
+
       <article className={styles.main}>
         <div className={styles.anchor} id="skill_section"/>
         <h4>skills</h4>

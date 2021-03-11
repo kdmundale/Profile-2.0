@@ -6,19 +6,17 @@
   flex-direction: column;
 }
 
+.resumeNav li {
+  padding :1rem 0;
+}
+
 .resumeNav a{
   color: rgb(125,240,251);
-  font-size: 5.5vw;
+  font-size: 7vw;
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   transition: all .2s ease-in-out;
-  padding: .5rem 0;
-}
-
-.resumeNav div{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: .75rem 0;
 }
 
 #navButton{
@@ -113,7 +111,7 @@
   background-color: rgba(0,0,0,.7);
   margin: .5rem auto;
   text-align: left;
-  font-size: 8vw;
+  font-size: 9vw;
   font-variant: small-caps;
   color: rgb(125,240,251);
   text-shadow: rgb(0,0,0) 0px 0px 10px;
