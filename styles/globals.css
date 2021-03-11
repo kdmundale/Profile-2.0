@@ -405,6 +405,12 @@ footer a {
   padding: 0 .75vw;
   border-left: 1px solid white;
   border-right: 1px solid white;
+  transition: all .2s ease-in-out;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  color: black;
 }
 
 footer p {
@@ -474,6 +480,10 @@ footer p {
     transform: scale(1.1);
     border-top: 2px solid  rgb(125,240,251);
     border-bottom: 2px solid rgb(125,240,251);
+  }
+
+  footer a, footer p {
+    font-size: 1.5vw;
   }
 }
 

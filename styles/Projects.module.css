@@ -127,3 +127,30 @@
   font-size: 4vw;
   color: rgb(165, 156, 255)
 }
+
+@media screen and (min-width:768px){
+  .main {
+    padding-top: 15rem;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .main section p {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .main section h2 {
+    font-size: 50px;
+  }
+
+  .main section h3 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .main{
+    padding-top: 20rem;
+  }
+}
