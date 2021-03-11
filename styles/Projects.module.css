@@ -23,6 +23,7 @@
 }
 
 .main section h3 {
+  text-align: center;
   font-family: 'Lato', sans-serif;
   color: rgb(125,240,251);
   font-size: 4vw;
