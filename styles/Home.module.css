@@ -9,6 +9,7 @@
   top: 25vw;
   background-color: rgba(0,0,0,0);
   z-index: 10;
+  padding-bottom: 5rem;
 }
 
 .blurb div {
