@@ -1,0 +1,129 @@
+.main{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0;
+  align-items: center;
+}
+
+.main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main section h2 {
+  margin-top: 3rem;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: rgb(125,240,251);
+  font-size: 6vw;
+}
+
+.main section h3 {
+  font-family: 'Lato', sans-serif;
+  color: rgb(125,240,251);
+  font-size: 4vw;
+  margin-bottom: 1rem;
+}
+
+.road {
+  position: relative;
+  top:0;left:-2px;
+  height: 25vw; width: 25vw;
+  background-color: #151919;
+  border-left: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+  z-index: 10;
+}
+
+#car {
+  background-image: url('../public/images/project-images/CAR.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 7vw 0 0 5vw;
+  height: 13vw; width: 7vw;
+  -webkit-animation: move_car 2s infinite;
+       -moz-animation: move_car 2s infinite;
+         -o-animation: move_car 2s infinite;
+            animation: move_car 2s infinite;
+  z-index: 22;
+}
+
+@keyframes move_car {
+  0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+  50% {
+        transform: translate3d(12vw, 0px, 0px);
+        animation-timing-function: ease-out;
+      }
+  100% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+}
+
+.line, .line3 {
+  position: absolute;
+  height: 10px;
+  width: 3px;
+  left: 66%;
+  top: 0px;
+  background-color: white;
+  z-index: 21;
+}
+
+.line2, .line4 {
+  position: absolute;
+  height: 10px;
+  width: 3px;
+  left: 33%;
+  top: 0px;
+  background-color: white;
+  z-index: 21;
+}
+
+.line, .line2{
+  -webkit-animation: move_lines .8s infinite;
+       -moz-animation: move_lines .8s infinite;
+         -o-animation: move_lines .8s infinite;
+            animation: move_lines .8s infinite;
+}
+
+.line3, .line4{
+  -webkit-animation: move_lines .8s infinite;
+       -moz-animation: move_lines .8s infinite;
+         -o-animation: move_lines .8s infinite;
+            animation: move_lines .8s infinite;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+@keyframes move_lines {
+  0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in;
+    }
+  50% {
+        transform: translate3d(0px, 12.5vw, 0px);
+        animation-timing-function: ease-out;
+      }
+  100% {
+        transform: translate3d(0px, 21.5vw, 0px);
+        animation-timing-function: ease-out;
+    }
+}
+
+.main section p {
+  width: 80%;
+  margin: .5rem auto;
+  font-family: 'Lato', sans-serif;
+  font-size: 4vw;
+  color: rgb(165, 156, 255)
+}

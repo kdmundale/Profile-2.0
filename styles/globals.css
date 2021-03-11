@@ -380,6 +380,57 @@ header nav {display: none;}
   transform: scale(1.1);
 }
 
+footer {
+  margin-top: 10rem;
+  bottom: 0;left: 0;right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:  rgb(111, 102, 186);
+}
+
+footer div{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+  font-size: 3vw;
+  font-variant: small-caps;
+  margin: 1rem .5rem;
+  padding: 0 .75vw;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+footer p {
+  color: white;
+  font-size: 3vw;
+  padding-bottom: 1rem;
+}
+
+.torchy {
+  height: 25vw; width: 25vw;
+  background-image: url('../public/images/project-images/paperdolls.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,.8);
+}
+
+.dad_joke {
+  height: 25vw; width: 25vw;
+  background-image: url('../public/images/project-images/dadjoke.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,.8);
+}
+
 @media screen and (min-width:768px){
 
   header h1 {
