@@ -22,14 +22,14 @@ export default function Header({children}){
           zindex:40
         }}>
           <Link href="/strengths"><a>strengths</a></Link>
-          <Link href="/projects"><a>projects</a></Link>
+          <Link href="/projects"><a>builds</a></Link>
           <Link href="/resume"><a>resume</a></Link>
           <Link href="/contact"><a>contact</a></Link>
           <Link href="/"><a>main</a></Link>
         </div>
         <nav>
           <Link href="/strengths"><a>strengths</a></Link>
-          <Link href="/projects"><a>projects</a></Link>
+          <Link href="/projects"><a>builds</a></Link>
           <Link href="/resume"><a>resume</a></Link>
           <Link href="/contact"><a>contact</a></Link>
           <Link href="/"><a>main</a></Link>
