@@ -1,5 +1,6 @@
 import StarField from '../componenets/star_field'
 import Header from '../componenets/header'
+import MyFooter from "../componenets/footer"
 import Head from 'next/head'
 import styles from '../styles/Contact.module.css'
 export default function StrengthsPsge(){
@@ -21,7 +22,7 @@ export default function StrengthsPsge(){
         <a id={styles.ig_icon} target="blank" href="https://www.instagram.com/katherine.doris/"> </a>
       </div>
     </section>
-
+    <MyFooter/>
     </StarField>
   )
 }

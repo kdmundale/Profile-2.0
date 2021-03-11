@@ -1,5 +1,6 @@
 import StarField from '../componenets/star_field'
 import Header from '../componenets/header'
+import MyFooter from "../componenets/footer"
 import Image from 'next/image'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
@@ -37,6 +38,7 @@ export default function Home(){
     </div>
     <ProfilePic/>
     </section>
+    <MyFooter/>
   </StarField>
   )
 }

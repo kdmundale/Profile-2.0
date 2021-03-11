@@ -1,5 +1,6 @@
 import StarField from '../componenets/star_field'
 import Header from '../componenets/header'
+import MyFooter from "../componenets/footer"
 import Head from 'next/head'
 import styles from '../styles/Strengths.module.css'
 // import FadeInSection from '../componenets/effects'
@@ -26,6 +27,7 @@ export default function StrengthsPage(){
       {strengthItem}
       </section>
 
+    <MyFooter/>
     </StarField>
   )
 }

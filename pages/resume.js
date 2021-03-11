@@ -1,5 +1,6 @@
 import StarField from '../componenets/star_field'
 import Header from '../componenets/header'
+import MyFooter from "../componenets/footer"
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -99,6 +100,7 @@ export default function ResumePage(){
       <div><h2>{eds.degree}</h2><h3>{eds.name}</h3><h3>{eds.grad}</h3><NewlineText text={eds.details}/></div>
       </article>
 
+    <MyFooter/>
     </StarField>
   )
 }
