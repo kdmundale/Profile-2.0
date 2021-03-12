@@ -416,6 +416,7 @@ footer {
 }
 
 footer q {
+  font-size: 3vw;
   text-align: center;
   padding: 1rem;
   color: white;
@@ -522,7 +523,7 @@ footer p {
     border-bottom: 2px solid rgb(125,240,251);
   }
 
-  footer a, footer p {
+  footer a, footer p, footer q {
     font-size: 1.5vw;
   }
 }
