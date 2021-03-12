@@ -416,6 +416,7 @@ footer {
 }
 
 footer q {
+  text-align: center;
   padding: 1rem;
   color: white;
   font-style: italic;
