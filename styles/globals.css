@@ -415,6 +415,12 @@ footer {
   background:  rgb(111, 102, 186);
 }
 
+footer q {
+  padding: 1rem;
+  color: white;
+  font-style: italic;
+}
+
 footer div{
   display:flex;
   flex-direction: row;
