@@ -13,7 +13,7 @@ export default function Header({children}){
 
   return(
     <header>
-      <h1>KD Mundale</h1>
+      <Link href="/"><a><h1>KD Mundale</h1></a></Link>
       <h2>{children}</h2>
       <button onClick={toggle}
         type="button" name="button" alt="Site Links"></button>

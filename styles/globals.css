@@ -290,6 +290,24 @@ a {
  }
 }
 
+@keyframes shimmy {
+  0%{
+    transform: translate3d(15px, 0px, 0px);
+  }
+  25%{
+    transform: translate3d(0px, 0px, 13px);
+  }
+  50%{
+    transform: translate3d(8px, 0px, 0px);
+  }
+  75%{
+    transform: translate3d(0px, 0px, 5px);
+  }
+  100%{
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
 header {
     box-shadow: 0px 0px 7px 3px  rgba(0,0,0,1);
     position: fixed;
@@ -313,6 +331,14 @@ header h1 {
   font-size: 10vw;
   color: rgb(125,240,251);
   z-index: 30;
+}
+
+header h1:hover {
+  text-shadow: white 0px 0px 20px;
+  -webkit-animation: shimmy .25s linear;
+       -moz-animation: shimmy .25s linear;
+         -o-animation: shimmy .25s linear;
+            animation: shimmy .25s linear;
 }
 
 header h2 {
@@ -437,6 +463,14 @@ footer p {
   background-color: rgba(0,0,0,.8);
 }
 
+.github {
+  height: 25vw; width: 25vw;
+  background-image: url('../public/images/project-images/github.svg');
+  background-color: rgb(125,125,125);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 @media screen and (min-width:768px){
 
   header h1 {
