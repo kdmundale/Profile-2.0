@@ -19,7 +19,8 @@ langs:'JavaScript, HTML, CSS, icanhazdadjoke public API'},
 {title:'Downtown Lancaster',status:'',link:'https://kdmundale.github.io/DowntownLancaster-DrivingGame/',
 id:'driving',key:3,alt:'Red 8-bit car driving down a laned road, swerving',
 descript:'My very first build, later added touch screen capability and responsive design for all devices',
-langs:'JavaScript, HTML, CSS'}]
+langs:'JavaScript, HTML, CSS'},
+{title:'GitHub',status:'',link:'https://github.com/kdmundale',id:'github',key:4, alt:'link to github',descript:"Collection of much my code, from my first 'Hello, World!' to every personal project and assignment in between",langs:'Python, JavaScript, PHP, Java, Flutter, Flask, React/Nextjs, MySQL, HTML/CSS, and more'}]
 
 // {title:'',status:'',link:'',id:'',alt:'',descript:'',langs:''}
 
