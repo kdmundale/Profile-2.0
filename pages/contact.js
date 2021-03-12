@@ -16,10 +16,10 @@ export default function StrengthsPsge(){
       <p>I am located in Lancaster, PA.</p>
       <p>Let's chat.</p>
       <div>
-        <a id={styles.li_icon} target="blank" href="https://www.linkedin.com/in/katherine-mundale/"> </a>
-        <a id={styles.email_icon} target="blank" href="mailto:katherine.doris.mundale@gmail.com"> </a>
-        <a id={styles.fb_icon} target="blank" href="https://www.facebook.com/katherine.d.mundale"> </a>
-        <a id={styles.ig_icon} target="blank" href="https://www.instagram.com/katherine.doris/"> </a>
+        <a id={styles.li_icon} target="blank" alt="link to LinkeddIn" href="https://www.linkedin.com/in/katherine-mundale/"> </a>
+        <a id={styles.email_icon} target="blank" alt="link to Email" href="mailto:katherine.doris.mundale@gmail.com"> </a>
+        <a id={styles.fb_icon} target="blank" alt="link to Facebook" href="https://www.facebook.com/katherine.d.mundale"> </a>
+        <a id={styles.ig_icon} target="blank" alt="link to Instagram" href="https://www.instagram.com/katherine.doris/"> </a>
       </div>
     </section>
     <MyFooter/>
