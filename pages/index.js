@@ -18,7 +18,7 @@ export default function Home(){
 
   function ProfilePic(){
     return (<Image
-        src="/images/me.webp"
+        src="/images/me.jpg"
         layout='intrinsic'
         height={1679}
         width={1261}
