@@ -1,0 +1,5 @@
+# Group 1
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+Sitemap: http://www.kdmundale.com/sitemap.xml
