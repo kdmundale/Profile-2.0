@@ -1,6 +1,7 @@
 {
   "name": "profile",
   "version": "0.1.0",
+  "builds": [{ "src": "package.json", "use": "@now/next" }],
   "private": true,
   "scripts": {
     "dev": "next dev -p 8080",
