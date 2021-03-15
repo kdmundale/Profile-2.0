@@ -30,15 +30,6 @@ export default function StarField({ children, home }){
         name="KDM profile"
         content="KDM's online profile and portfolio"/>
       <title>KDMundale</title>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVBK066173"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-PVBK066173');
-      </script>
     </Head>
     {allStars.map(function(d, idx){
        return whichStar(d,idx)
