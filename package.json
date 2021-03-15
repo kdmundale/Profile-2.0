@@ -11,6 +11,7 @@
   "scripts": {
     "dev": "next dev -p 8080",
     "build": "next build",
+    "now-build": "next build",
     "start": "next start"
   },
   "dependencies": {
