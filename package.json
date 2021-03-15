@@ -23,8 +23,5 @@
     "fs": false,
     "path": false,
     "os": false
-  },
-  "devDependencies": {
-    "next": "^10.0.8"
   }
 }
