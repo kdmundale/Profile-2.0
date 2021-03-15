@@ -25,6 +25,7 @@ export default function StarField({ children, home }){
     <div className={styles.container}>
     <Head>
       <link rel="icon" href="favicon.ico"/>
+      <meta name="google-site-verification" content="VqmpJbz5zCentQ8icRG2Icf8L0yci6lz8f69JkxvFW0"/>
       <meta
         name="KDM profile"
         content="KDM's online profile and portfolio"/>
