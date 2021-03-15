@@ -1,7 +1,12 @@
 {
   "name": "profile",
   "version": "0.1.0",
-  "builds": [{ "src": "package.json", "use": "@now/next" }],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ],
   "private": true,
   "scripts": {
     "dev": "next dev -p 8080",
@@ -10,7 +15,6 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
@@ -18,5 +22,8 @@
     "fs": false,
     "path": false,
     "os": false
+  },
+  "devDependencies": {
+    "next": "^10.0.8"
   }
 }
