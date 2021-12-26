@@ -461,6 +461,14 @@ footer p {
   background-color: rgba(0,0,0,.8);
 }
 
+.roonicorn {
+  height: 25vw; width: 25vw;
+  background-image: url('../public/images/project-images/roonicorn.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,.8);
+}
 .dad_joke {
   height: 25vw; width: 25vw;
   background-image: url('../public/images/project-images/dadjoke.png');
