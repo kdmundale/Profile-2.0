@@ -16,16 +16,15 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "next": "^10.0.8",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "browser": {
     "fs": false,
     "path": false,
     "os": false
   },
-  "devDependencies" : {
-    "next": "^10.0.8"
-}
+  "devDependencies": {
+    "next": "^10.2.3"
+  }
 }
