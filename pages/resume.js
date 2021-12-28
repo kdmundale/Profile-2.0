@@ -26,7 +26,7 @@ duties:'Lead front of house staff of 3-4 people, delegate assignments, enforce b
 {name:'Cafe Chuckles',title:'Server/Bartender',local:'Lancaster,PA',from:'Feb 2005 - Oct 2007', duties:''},
 {name:'Sterling Custom Cabinetry', title:'Manager, Rough Lumber Department', local:'Lancaster, PA', from:'Sept 2003 - Sept 2006', duties:'Analyze and interpret conceptual drawings and blueprints to create custom moldings, define needs for material selection by understanding build requirements and paint/stain finishes\n \nSolve problems by troubleshooting machinery and equipment, adjust calibration and replacing/repairing parts as needed\n \nConsistently deliver weekly product goals by supplying needed material to cabinetmakers, ensuring production continues on schedule'}]
 
-const eds = {name:'Thaddeus Stevens College of Technology, Lancaster PA', degree:'Associate of Applied Science in Software Engineering', grad:'May 2021', details:['GPA: 3.8\n \nLeadership Workshop Nomination\n \nACM ICPC Programming Competition']}
+const eds = [{name:'Thaddeus Stevens College of Technology, Lancaster PA', degree:'Associate of Applied Science in Software Engineering', grad:'May 2021', details:['GPA: 3.8\n \nLeadership Workshop Nomination\n \nACM ICPC Programming Competition']},{name:'Southern New Hampshire University', degree:'BS in Computer Science', grad:'May 2023', details:['GPA: 3.5']}];
 
 function NewlineText(props) {
 const text = props.text;
@@ -45,6 +45,10 @@ export default function ResumePage(){
 
   const jobItems = resumeJobs.map((c) =>
       <div key={c.name}><h2>{c.name}</h2><h3>{c.title}</h3><h3>{c.local}</h3><h3>{c.from}</h3><NewlineText text={c.duties}/></div>
+  )
+
+  const schools = eds.map((c) =>
+      <div key={c.name}><h2>{c.degree}</h2><h3>{c.name}</h3><h3>{c.grad}</h3><NewlineText text={c.details}/></div>
   )
 
   const [showMe, setShowMe] = useState(false);
@@ -98,7 +102,7 @@ export default function ResumePage(){
       {jobItems}
       <div className={styles.anchor} id="education_section"/>
       <h4>education</h4>
-      <div><h2>{eds.degree}</h2><h3>{eds.name}</h3><h3>{eds.grad}</h3><NewlineText text={eds.details}/></div>
+      {schools}
       </article>
 
     <MyFooter/>
