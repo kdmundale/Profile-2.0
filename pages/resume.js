@@ -8,10 +8,10 @@ import styles from '../styles/Resume.module.css'
 
 const relSkills =['Python3', 'PHP', 'JavaScript', 'Java', 'REACT', 'NEXTJS', 'REST APIs', 'Flutter', 'HTML/CSS', 'Automation Testing', 'Selenium Java', 'SQL Database', 'MySQL', 'PostgreSQL', 'SQLite', 'PgAdmin', 'phpMyAdmin', 'Version Control', 'Git / GitHub', 'Microsoft Office360', 'IBM Maas360', 'Kaseya VSA']
 
-const relProjects=[{name:'CLT- The CSET Supplemental Learning Tool React/Next.js Application', source:'Semester Final',details:'Plan and build supplemental web application to be used as a learning support tool for the Computer Software Engineering students at Thaddeus Stevens College of Technology\n \nIdentified web-based user interactions and design responsive user interface using React concepts\n \nOptimize components for maximum efficiency and use over multiple devices\n \nDesign front end architecture to support user-interface with complete accuracy, integrate application with 3rd party services\n \nImplement SQL database and security for sustained use and ease of administration, troubleshooting software bugs, manage data efficiently maintain data integrity'},
-{name:'Lancaster City Nutrition Website & Web Application', source:'Personal Project/ In Development', details:'Design, model, and launch website and web application for Lancaster City Nutrition. Gather and refine specifications and requirements based on technical needs, collaborate with customer to establish and prioritize user stories, maintain project integrity with git version control\n \nWrite well designed, testable, efficient Python 3 code for Flask application by using best software development practices. Create website layout/user interfaces by using standard HTML/CSS practices and templating, keep theme to customer’s desired esthetic \n \nBuild/test SQL database using pgAdmin, integrate data into user friendly UI for both registered users and admin services through web application'},
+const relProjects=[{name:'Lancaster City Nutrition Website & Web Application', source:'Personal Project/ In Development', details:'Design, model, and launch website and web application for Lancaster City Nutrition. Gather and refine specifications and requirements based on technical needs, collaborate with customer to establish and prioritize user stories, maintain project integrity with git version control\n \nWrite well designed, testable, efficient Python 3 code for Flask application by using best software development practices. Create website layout/user interfaces by using standard HTML/CSS practices and templating, keep theme to customer’s desired esthetic \n \nBuild/test SQL database using pgAdmin, integrate data into user friendly UI for both registered users and admin services through web application'},
 {name:'Tribute to Torchy Togs: Paper Doll Web Application', source:'Personal Project', details:'Begin online, interactive, vintage paper-doll website using raw JavaScript, including responsive design and touch technology for desktop and mobile devices\n \nCurate, edit, and remaster images and modify files to improve website loading by 75%, implement improved JS functions to raise performance by 60%'},
 {name:'Dad Joke App', source:'Personal Project', details:'Develop and deploy random dad-joke generating app using JavaScript/REST API with responsive design features, code with Flutter for mobile Android and iOS deployment'},
+{name:'CLT- The CSET Supplemental Learning Tool React/Next.js Application', source:'Semester Final',details:'Plan and build supplemental web application to be used as a learning support tool for the Computer Software Engineering students at Thaddeus Stevens College of Technology\n \nIdentified web-based user interactions and design responsive user interface using React concepts\n \nOptimize components for maximum efficiency and use over multiple devices\n \nDesign front end architecture to support user-interface with complete accuracy, integrate application with 3rd party services\n \nImplement SQL database and security for sustained use and ease of administration, troubleshooting software bugs, manage data efficiently maintain data integrity'},
 {name:'Nursing Home Portal', source:'Project manager - Semester Final',details:'Instantiate mock web portal for inpatient nursing home in raw PHP/JavaScript, prepare login roles and access levels according to customer specifications, include forms to submit and tables to display data\n \nGenerate user stories and set weekly sprint goals to maintain progress, maintain project integrity using git version control and testing\n \nConstruct secure MySQL database, use phpMyAdmin for database administration, encrypt sensitive data'},
 {name:'TSCT Portal: Learning Portal for Thaddeus Stevens', source:'Project manager - Semester Final',details:'Lead team of 4 in design/build/implementation of online web portal Python 3 Flask application for college students and instructors\n \nDelegate tasks based on member’s strengths, mediate discussions and provide resources, lead daily stand-ups to discuss progress and achieve sprint goals\n \nEnsure code meets industry standards and test each feature before implementation'},
 {name:'Downtown Lancaster: JavaScript Driving Game', source:'Project manager - Semester Final',details:'Design and launch JavaScript driving game for desktop, later developed for touch devices'}]
@@ -39,9 +39,9 @@ export default function ResumePage(){
   const skills = relSkills.map((s, index) =>
       <div key={index}>{s}</div>
   )
-  const projects = relProjects.map((c) =>
-      <div key={c.name}><h2>{c.name}</h2><h3>{c.source}</h3><NewlineText text={c.details}/></div>
-  )
+  // const projects = relProjects.map((c) =>
+  //     <div key={c.name}><h2>{c.name}</h2><h3>{c.source}</h3><NewlineText text={c.details}/></div>
+  // )
 
   const jobItems = resumeJobs.map((c) =>
       <div key={c.name}><h2>{c.name}</h2><h3>{c.title}</h3><h3>{c.local}</h3><h3>{c.from}</h3><NewlineText text={c.duties}/></div>
@@ -94,9 +94,7 @@ export default function ResumePage(){
         <section className={styles.skillContainer}>
         {skills}
         </section>
-        <div className={styles.anchor} id="project_section"/>
-        <h4>projects</h4>
-      {projects}
+
         <div className={styles.anchor} id="employment_section"/>
         <h4>employment</h4>
       {jobItems}
