@@ -178,8 +178,95 @@
   }
 }
 
+@media screen and (min-width:900px){
+  .main section a {
+    margin: 1rem;
+    width: 12rem;
+    height: 12rem;
+    transition: all .2s ease-in-out;
+  }
+
+  .road {
+    border:3px solid green;
+    width: 12rem;
+    height:12rem;
+  }
+
+  .line, .line3 {
+    position: absolute;
+    height: 2rem;
+    width: .5rem;
+  }
+
+  .line2, .line4 {
+    position: absolute;
+    height: 2rem;
+    width: .5rem;
+  }
+
+  #car {
+    margin: 3rem 0 0 1rem;
+    height: 6rem; width: 2.5;
+  }
+
+  @keyframes move_lines {
+    0% {
+          transform: translate3d(0px, 0px, 0px);
+          animation-timing-function: ease-in;
+      }
+    50% {
+          transform: translate3d(0px, 75px, 0px);
+          animation-timing-function: ease-out;
+        }
+    100% {
+          transform: translate3d(0px, 150px, 0px);
+          animation-timing-function: ease-out;
+      }
+  }
+
+  @keyframes move_car {
+    0% {
+          transform: translate3d(0px, 0px, 0px);
+          animation-timing-function: ease-in;
+      }
+      25% {
+            transform: translate3d(50px, 0px, 0px);
+            animation-timing-function: ease-in;
+        }
+    50% {
+          transform: translate3d(100px, 0px, 0px);
+          animation-timing-function: ease-out;
+        }
+        75% {
+              transform: translate3d(60px, 0px, 0px);
+              animation-timing-function: ease-in;
+          }
+    100% {
+          transform: translate3d(0px, 0px, 0px);
+          animation-timing-function: ease-in;
+      }
+  }
+
+  .line, .line2{
+    -webkit-animation: move_lines .78s infinite;
+         -moz-animation: move_lines .78s infinite;
+           -o-animation: move_lines .78s infinite;
+              animation: move_lines .78s infinite;
+  }
+
+  .line3, .line4{
+    -webkit-animation: move_lines .78s infinite;
+         -moz-animation: move_lines .78s infinite;
+           -o-animation: move_lines .78s infinite;
+              animation: move_lines .78s infinite;
+    -webkit-animation-delay: .37s;
+            animation-delay: .37s;
+          }
+}
+
 @media screen and (min-width:1200px){
   .main{
     padding-top: 20rem;
+    width: 1000px;
   }
 }

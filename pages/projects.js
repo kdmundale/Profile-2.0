@@ -58,7 +58,6 @@ export default function ProjectsPage(){
         <section key={x.key}>
               <h2>{x.title}</h2>
               <h3>{x.status}</h3>
-              <h4>click icon to view:</h4>
                 <a target="blank" href={x.link} className={s_id} alt={x.alt}></a>
               <p>{x.descript}</p><p>{x.langs}</p>
         </section>
