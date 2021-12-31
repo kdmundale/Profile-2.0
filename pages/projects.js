@@ -29,7 +29,7 @@ langs:'JavaScript, HTML, CSS'},
 // {title:'',status:'',link:'',id:'',alt:'',descript:'',langs:''}
 
 export default function ProjectsPage(){
-  let blah = "builds & experiments";
+  let blah = "builds & tinkerings";
 
   const proj_items = my_builds.map((x) => {
 
