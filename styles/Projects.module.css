@@ -157,17 +157,17 @@
   }
 
   .main section p {
-    font-size: 25px;
+    font-size: 20px;
     width: 90%;
   }
 
   .main section h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 8rem;
   }
 
   .main section h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .main section h4 {
@@ -186,8 +186,11 @@
     transition: all .2s ease-in-out;
   }
 
+  .main section p {
+    width: 60%;
+  }
+
   .road {
-    border:3px solid green;
     width: 12rem;
     height:12rem;
   }
