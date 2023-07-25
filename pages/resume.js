@@ -80,9 +80,6 @@ export default function ResumePage(){
           <li><Link href="#skill_section">
             <a>skills</a>
           </Link></li>
-          <li><Link href="#project_section">
-            <a>projects</a>
-          </Link></li>
           <li><Link href="#employment_section">
             <a>jobs</a>
           </Link></li>
