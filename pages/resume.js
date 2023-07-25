@@ -6,7 +6,8 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import styles from '../styles/Resume.module.css'
 
-const relSkills =['Inclusion advocate', 'Continuous self-motivated learner', 'Honest and sincere communicator', 'Cultivates supportive learning environment', 'Trauma-informed conflict resolution', 'Creative thinker and problem solver', 'Microsoft Office Suite / Microsoft Exchange', 'PHP / JavaScript / HTML / CSS', 'REACT / NEXTJS', 'OOP / Data Structures', 'SQL / MySQL / PostgreSQL Database', 'Version Control / Git / GitHub']
+const softSkills =['Inclusion advocate', 'Continuous self-motivated learner', 'Honest and sincere communicator', 'Cultivates supportive learning environment', 'Trauma-informed conflict resolution', 'Creative thinker and problem solver']
+const hardSkills =['Microsoft Office Suite / Microsoft Exchange', 'PHP / JavaScript / HTML / CSS', 'REACT / NEXTJS', 'OOP / Data Structures', 'SQL / MySQL / PostgreSQL Database', 'Version Control / Git / GitHub']
 
 const relProjects=[{name:'Lancaster City Nutrition Website & Web Application', source:'Personal Project/ In Development', details:'Design, model, and launch website and web application for Lancaster City Nutrition. Gather and refine specifications and requirements based on technical needs, collaborate with customer to establish and prioritize user stories, maintain project integrity with git version control\n \nWrite well designed, testable, efficient Python 3 code for Flask application by using best software development practices. Create website layout/user interfaces by using standard HTML/CSS practices and templating, keep theme to customer’s desired esthetic \n \nBuild/test SQL database using pgAdmin, integrate data into user friendly UI for both registered users and admin services through web application'},
 {name:'Tribute to Torchy Togs: Paper Doll Web Application', source:'Personal Project', details:'Begin online, interactive, vintage paper-doll website using raw JavaScript, including responsive design and touch technology for desktop and mobile devices\n \nCurate, edit, and remaster images and modify files to improve website loading by 75%, implement improved JS functions to raise performance by 60%'},
@@ -36,7 +37,10 @@ return (<p>{text}</p>)
 export default function ResumePage(){
   let blah= "resume"
 
-  const skills = relSkills.map((s, index) =>
+  const soft = softSkills.map((s, index) =>
+      <div key={index}>{s}</div>
+  )
+  const hard = hardSkills.map((s, index) =>
       <div key={index}>{s}</div>
   )
   // const projects = relProjects.map((c) =>
@@ -92,7 +96,9 @@ export default function ResumePage(){
         <div className={styles.anchor} id="skill_section"/>
         <h4>skills</h4>
         <section className={styles.skillContainer}>
-        {skills}
+        {soft}
+        <section className={styles.skillContainer}>
+        {hard}
         </section>
 
         <div className={styles.anchor} id="employment_section"/>
