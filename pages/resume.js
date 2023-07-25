@@ -97,6 +97,7 @@ export default function ResumePage(){
         <h4>skills</h4>
         <section className={styles.skillContainer}>
         {soft}
+        </section>
         <section className={styles.skillContainer}>
         {hard}
         </section>
@@ -107,6 +108,7 @@ export default function ResumePage(){
       <div className={styles.anchor} id="education_section"/>
       <h4>education</h4>
       {schools}
+      </section>
       </article>
 
     <MyFooter/>
