@@ -108,7 +108,6 @@ export default function ResumePage(){
       <div className={styles.anchor} id="education_section"/>
       <h4>education</h4>
       {schools}
-      </section>
       </article>
 
     <MyFooter/>
