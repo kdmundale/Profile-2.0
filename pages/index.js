@@ -9,7 +9,7 @@ export default function Home(){
 
   let blah="bringing unique perspective to programming and development"
 
-  let content = "I have spent the last two decades building relationships.\nCultivating positive spaces for discussions and elevating experiences is my passion.\nI know people.\nNow, I want to build systems that make their lives better.\n \nI offer a unique perspective\n \nand that makes me an asset."
+  let content = "I have spent the last two decades building relationships.\nCultivating positive spaces for discussions and elevating experiences is my passion.\nI know people.\nNow, I want to build systems that make their lives better.\n \n-I offer a unique perspective-\n \nand that makes me an asset."
 
   function NewlineText(props) {
   const text = props.text;
